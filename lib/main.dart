@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_responsive/pages/home_page.dart';
 
 main() {
   runApp(MyApp());
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
         primaryColorDark: Colors.black,
       ),
-//      home: HomePage(),
+      home: HomePage(),
       routes: {
-//        '/#': (context) => HomePage(),
+        '/#': (context) => HomePage(),
 //        '/terms': (context) => TermsPage(),
 //        '/privacy': (context) => PrivacyPage(),
       },
