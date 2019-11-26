@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_responsive/theme/primary.dart';
 import 'package:flutter_web_responsive/pages/home_page.dart';
 
 main() {
-  runApp(MyApp());
+  runApp(ResponsiveWeb());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+class ResponsiveWeb extends StatelessWidget {
+  const ResponsiveWeb({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      theme: ThemeData(
-        fontFamily: 'Nunito',
-        primaryColorDark: Colors.black,
-      ),
+      theme: primaryTheme(),
       home: HomePage(),
       routes: {
         '/#': (context) => HomePage(),
