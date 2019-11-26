@@ -103,11 +103,12 @@ class SmallLogoImg extends StatelessWidget {
       onTap: (){
         Navigator.pushNamed(context, '/');
       },
-      child: Image(
-        image: AssetImage('assets/Logo.png'),
+      child: Text("Logo"),
+//      child: Image(
+//        image: AssetImage('assets/Logo.png'),
         // we don't want the logo image resizing and jumping around
-        width: 200,
-      ),
+//        width: 200,
+//      ),
     );
   }
 }
