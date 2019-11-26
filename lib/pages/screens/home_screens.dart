@@ -1,6 +1,9 @@
 import "package:flutter/material.dart";
 
 import 'package:flutter_web_responsive/components/header.dart';
+import 'package:flutter_web_responsive/components/hero.dart';
+import 'package:flutter_web_responsive/components/screenshots.dart';
+import 'package:flutter_web_responsive/components/footer.dart';
 import 'package:flutter_web_responsive/utils/utils.dart';
 
 class LargeScreen extends StatelessWidget {
@@ -43,24 +46,23 @@ class LargeScreen extends StatelessWidget {
                     ),
                     child: Column(
                       children: <Widget>[
-                        LargeNavheader(),
+                        LargeNavHeader(),
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.05,
                         ),
-//                        LargeHero(),
-//                        SizedBox(
-//                          height: MediaQuery.of(context).size.height * 0.05,
-//                        ),
-//                        DesktopScreenshot(),
-//                        SizedBox(
-//                          height: MediaQuery.of(context).size.height * 0.05,
-//                        ),
-//                        VisionProductLarge(),
+                        LargeHero(),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.05,
+                        ),
+                        DesktopScreenshot(),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.05,
+                        ),
                       ],
                     ),
                   ),
-//                  Footer(color: colorFromHex("#6E67D0")),
-//                  Terms(),
+                  Footer(color: colorFromHex("#6E67D0")),
+                  Terms(),
                 ],
               ),
             ),
@@ -123,20 +125,19 @@ class SmallScreen extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.1,
                         ),
-//                        SmallHero(),
-//                        SizedBox(
-//                          height: MediaQuery.of(context).size.height * 0.1,
-//                        ),
-//                        MobileScreenshot(),
-//                        SizedBox(
-//                          height: MediaQuery.of(context).size.height * 0.05,
-//                        ),
-//                        VisionProductSmall(),
+                        SmallHero(),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.1,
+                        ),
+                        MobileScreenshot(),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.05,
+                        ),
                       ],
                     ),
                   ),
-//                  SmallFooter(color: colorFromHex("#6E67D0")),
-//                  SmallTerms(),
+                  SmallFooter(color: colorFromHex("#6E67D0")),
+                  SmallTerms(),
                 ],
               ),
             ),

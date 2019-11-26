@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 
-class LargeNavheader extends StatelessWidget {
+class LargeNavHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -86,12 +86,11 @@ class LogoImg extends StatelessWidget {
       onTap: (){
         Navigator.pushNamed(context, '/');
       },
-      child: Text("Logo")
-//      child: Image(
-//        image: AssetImage('assets/2.0x/Logo.png'),
-//        // we don't want the logo image resizing and jumping around
-//        width: 100,
-//      ),
+      child: Image(
+        image: AssetImage('assets/2.0x/logo.png'),
+        // we don't want the logo image resizing and jumping around
+        width: 100,
+      ),
     );
   }
 }
@@ -103,12 +102,11 @@ class SmallLogoImg extends StatelessWidget {
       onTap: (){
         Navigator.pushNamed(context, '/');
       },
-      child: Text("Logo"),
-//      child: Image(
-//        image: AssetImage('assets/Logo.png'),
+      child: Image(
+        image: AssetImage('assets/logo.png'),
         // we don't want the logo image resizing and jumping around
-//        width: 200,
-//      ),
+        width: 200,
+      ),
     );
   }
 }
@@ -116,12 +114,11 @@ class SmallLogoImg extends StatelessWidget {
 class GloginImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text("Signup Btn");
-//    return Image(
-//      // we don't want the login button resizing and jumping around
-//      image: AssetImage('assets/SignUpBtn.png'),
-//      width: 175,
-//      height: 40,
-//    );
+    return Image(
+      // we don't want the login button resizing and jumping around
+      image: AssetImage('assets/SignUpBtn.png'),
+      width: 175,
+      height: 40,
+    );
   }
 }
