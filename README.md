@@ -3,49 +3,7 @@
 This project is a starting point for a Flutter application for me. I am learning Flutter layout concepts while building this.
 
 
-## Project structure
-
-The screens are all clubbed together under `\pages` and this makes finding different sections easier. Each page right now has a screen layout which defines the different screen sizes.
-
-`main.dart` creates a theme for the app and loads the home page from `home_page.dart`. The home page loads the `responsive_widget.dart` widget. This widget uses the `LayoutBuilder` widget to create breakpoints and return the appropriate screen layout. Any component, using the responsive widget, can use it to define how it renders itself on different screen layouts. A component is a widget, which in my terminology, is a higher level widget using bloc providers and services
-
-As you can see that the changes would flow through the structure of this decision, we could use an `InheritedWidget`, but since we aren't looking at change management and building a fairly straight forward website, I have used a `Scaffold` widget.
-
-This `Scaffold` widget creates stacks using `Stack` widgets or just plain scrolling views using `SingleChildScrollView` widget and builds the home page structure for different screen sizes on it.
-
-This is the structure of the current app :
-
-```
-
-    |
-    |--pages
-    |  |--home_page.dart
-    |
-    |--screens
-    |   |--home_screens.dart
-    |
-    |--components
-    |  |--header.dart
-    |  |--hero.dart
-    |
-    |--themes  
-    |  |--primary.dart
-    |  |--dark.dart
-    |
-    |--bloc
-    |  |--
-    |
-    |--bloc_providers
-    |  |--
-    |
-    |--models
-    |  |--
-    |
-    |--services
-    |  |--
-    |
-    |--main.dart
-```
+There is a blog post on this on https://rizwaniqbal.com/posts/flutter-web-experiment/
 
 
 ## Resources I referred to while building this
